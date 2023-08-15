@@ -26,6 +26,7 @@ function Navbar() {
             <li><Link className='links' to="/courses">COURSES</Link></li>
             <li><Link className='links' to="/blog">BLOG</Link></li>
             <li><Link className='links' to="/contact">CONTACT</Link></li>
+            <li><Link className='links' to="/campus">CAMPUS</Link></li>
           </ul>
         </div>
         <FontAwesomeIcon className={`Icon ${isMenuOpen ? 'close' : ''}`} icon={faBars} onClick={toggleMenu} /> 

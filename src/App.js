@@ -7,17 +7,19 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import './App.css';
 import Courses from './components/Courses/Courses';
+import Campus from './components/Campus/Campus';
 
 function App() {
   return (
-    <div className='Header'>
+    <div>
       <Router>
-        <Navbar /> 
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/courses' element={<Courses />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/campus' element={<Campus />} />
         </Routes>
       </Router>
     </div>

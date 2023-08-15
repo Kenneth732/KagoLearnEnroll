@@ -1,11 +1,11 @@
 import React from 'react';
 import './Home.css';
-import Courses from '../Courses/Courses';
+
 
 
 function Home() {
   return (
-    <div >
+    <div className='Header'>
       <div className='Text-Box'>
         <h1>Welcome to Elegance in Fashion</h1>
         <p>
@@ -15,7 +15,6 @@ function Home() {
           Explore Collections
         </a>
       </div>
-      <Courses />
     </div>
   );
 }

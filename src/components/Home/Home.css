@@ -1,4 +1,17 @@
-  .Text-Box {
+.Header {
+  min-height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.7),
+      rgba(4, 9, 30, 0.7)
+    ),
+    url('/src/components/assets/banner.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.Text-Box {
     width: 90%;
     color: #fff;
     position: absolute;
