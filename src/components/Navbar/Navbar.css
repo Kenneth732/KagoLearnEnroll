@@ -1,0 +1,90 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,200&display=swap');
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a .logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .Nav-Link {
+    flex: 1;
+    text-align: right;
+}
+
+nav .Nav-Link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+nav .Nav-Link ul li .links{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav .Nav-Link ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: .6s;
+}
+
+nav .Nav-Link ul li:hover::after{
+    width: 100%;
+}
+nav .Icon{
+    display: none;
+}
+
+  /* Show the menu when active */
+  .Nav-Link.active {
+    right: 0;
+  }
+  .Icon.close {
+    transform: rotate(180deg);
+  }
+
+
+
+
+  /* media query */
+
+  @media( max-width: 700px) {
+    nav .Nav-Link ul li {
+        display: block;
+    }
+    .Nav-Link {
+        position: absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .Icon{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .Nav-Link ul {
+        padding: 30px;
+    }
+  }
+
